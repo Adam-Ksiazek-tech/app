@@ -13,6 +13,7 @@ docker-compose.override.yml
 .docker/
 *.env
 .env.*
+*.svg
 
 # OS-specific files
 .DS_Store
