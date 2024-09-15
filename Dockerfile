@@ -8,9 +8,11 @@ WORKDIR /app
 RUN npm install -g create-react-app
 
 # Zainstaluj nano
-RUN apk add --no-cache nano
+RUN apk add --no-cache nano openssh git
 
 # Skopiuj package.json i zainstaluj zależności
 COPY package.json ./
 
 RUN npm install
+
+
