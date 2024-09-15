@@ -15,7 +15,7 @@ class App extends Component {
         active: true,
         finishDate: null
       },
-      { id: 1, text: "1. zrobić dobry uczynej", date: '2020-11-12', important: false, active: true, finishDate: null },
+      { id: 1, text: "2. zrobić dobry uczynej", date: '2020-11-12', important: false, active: true, finishDate: null },
       { id: 2, text: "pomalować dom po sylwestrze", date: '2019-09-11', important: false, active: true, finishDate: null },
       { id: 3, text: "schudnąć 30 kilogramów", date: '2019-05-20', important: true, active: true, finishDate: null },
       { id: 4, text: "sprzedać butelki po piwie (20 skrzynek)", date: '2020-11-12', important: false, active: true, finishDate: null },
