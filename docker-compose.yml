@@ -1,14 +1,17 @@
 version: '3.8'
 services:
   todoapp-udemy:
-    build: ./ToDoApp
+    build: ./
     volumes:
-      - ./ToDoApp:/app
+      - ./:/app
       - /app/node_modules
+      - ~/.ssh:/home/node/.ssh
     environment:
       - NODE_ENV=development
       - NODE_OPTIONS=--openssl-legacy-provider
-    command: ["npm", "start"]
+    # command: >
+    #   sh -c "chown -R node:node /home/node/.ssh && npm start"
+    command: ["sh", "-c", "ls -la /app && /app/init.sh"]
     ports:
       - '3001:3000'
     stdin_open: true
