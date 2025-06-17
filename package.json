@@ -1,7 +1,7 @@
 {
   "homepage": "https://adam-ksiazek-tech.github.io/app/",
   "name": "todoapp-udemy",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "dependencies": {
     "gh-pages": "^6.1.1",
